@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #338cf4;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90vmin;
+	padding: 50px 30px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+.options {
+	gap: 15px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+button {
+	place-items: center;
+	-moz-columns: #020929;
+	columns: #020929;
+	display: grid;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	background-color: #fff;
+}
+
+select {
+	padding: 7px;
+	cursor: pointer;
+	border: 1px solid #020929;
+	border-radius: 3px;
+}
+
+.options label .options select {
+	font-family: 'Poppins', sans-serif;
+}
+
+input[type='color'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+input[type='color']::-webkit-color-swatch {
+	border-radius: 15px;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+input[type='color']::-moz-color-swatch {
+	border-radius: 15px;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+#text-input {
+	height: 50dvh;
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.active {
+	background-color: #e0e9ff;
+}
