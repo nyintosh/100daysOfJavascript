@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QR Code Generator | 100daysOfJavascript</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+			defer
+		></script>
+		<script defer src="./app.js"></script>
+	</head>
+	<body>
+		<section>
+			<div class="row">
+				<input
+					class="light"
+					type="color"
+					value="#ffffff"
+					aria-label="Light color picker"
+				/>
+				<input class="dark" type="color" aria-label="Dark color picker" />
+				<select class="sizes">
+					<option value="100">100×100</option>
+					<option value="200">200×200</option>
+					<option value="300">300×300</option>
+					<option selected value="400">400×400</option>
+					<option value="500">500×500</option>
+					<option value="600">600×600</option>
+					<option value="700">700×700</option>
+					<option value="800">800×800</option>
+					<option value="900">900×900</option>
+					<option value="1000">1000×1000</option>
+				</select>
+			</div>
+			<input
+				class="qr-text"
+				type="text"
+				placeholder="Enter QR Text"
+				aria-label="Text to be translate into QRCode"
+			/>
+			<div id="qr-code"></div>
+			<div class="action-container">
+				<a class="download btn" href="#" download="QRCode">
+					<span>Download</span>
+					<img alt="" src="assets/download.svg" />
+				</a>
+				<button class="btn share-btn">
+					<span>Share</span>
+					<img alt="" src="assets/share.svg" />
+				</button>
+			</div>
+		</section>
+	</body>
+</html>
